@@ -1,0 +1,31 @@
+.haloEffect {
+  position: relative;
+}
+
+.haloEffect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #4299e1, #3182ce, #2b6cb0);
+  border-radius: 16px;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
