@@ -6,32 +6,8 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'American Health Marketplace',
+  title: 'Health Alliance',
   description: 'Find your perfect health plan today with $0 premium options available.',
-  icons: {
-    icon: [
-      {
-        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-LZ8tSnDbWDHr5bbjw6SVIQnpkpzbtD.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-    ],
-    shortcut: [
-      {
-        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-LZ8tSnDbWDHr5bbjw6SVIQnpkpzbtD.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-    ],
-    apple: [
-      {
-        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-LZ8tSnDbWDHr5bbjw6SVIQnpkpzbtD.png',
-        sizes: '180x180',
-        type: 'image/png',
-      },
-    ],
-  },
-  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({
