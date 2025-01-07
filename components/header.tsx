@@ -14,7 +14,10 @@ export function Header() {
             </div>
             <span className="text-xl font-bold text-blue-800">Health Alliance</span>
           </div>
-          <a href="+18449340565" className="flex items-center space-x-2 bg-green-500 px-3 py-2 rounded-full animate-pulse text-white">
+          <a 
+            href="tel:+18449340565" 
+            className="flex items-center space-x-2 bg-green-500 px-3 py-2 rounded-full animate-pulse text-white"
+          >
             <div className="relative w-7 h-7 rounded-full overflow-hidden">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/avatar-EKtunPMRcvj0QGhYSVr7fbQ9q1stRU.webp"
