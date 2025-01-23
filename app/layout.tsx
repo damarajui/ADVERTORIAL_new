@@ -90,6 +90,16 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={inter.className}>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function(a,t,c,l,o,u,d){a['_genesysJourneySdk']=o;a[o]=a[o]||function(){
+            (a[o].q=a[o].q||[]).push(arguments)},a[o].l=1*new Date();u=t.createElement(c),
+            d=t.getElementsByTagName(c)[0];u.async=1;u.src=l;u.charset='utf-8';d.parentNode.insertBefore(u,d)
+            })(window, document, 'script', 'https://apps.usw2.pure.cloud/journey/sdk/js/web/v1/ac.js', 'ac');
+            ac('init', '4887627e-b8fc-46b5-bc61-67fd778d7c9a', { region: 'usw2' });
+            ac('pageview');
+          `
+        }} />
         <Script id="redtrack" strategy="beforeInteractive">
           {`
             let src = 'https://qltw6.ttrk.io/track.js';
